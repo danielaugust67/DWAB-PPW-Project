@@ -19,9 +19,29 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'First_Name',
+        'Last_Name',
+        'status',
+        'Location',
         'email',
         'password',
+        'phone',
+        'gender',
     ];
+
+
+    public static function boot()
+    {
+        parent::boot();
+
+        // Event 'creating' dipanggil sebelum rekaman baru dibuat
+        self::creating(function ($user) {
+            // Set nilai default untuk profile_path jika tidak ada file yang diunggah
+            if (!$user->profile_path) {
+                $user->profile_path = 'default.jpg'; // Ganti dengan nama file default yang Anda inginkan
+            }
+        });
+    }
 
     /**
      * The attributes that should be hidden for serialization.
