@@ -24,7 +24,7 @@ https://templatemo.com/tm-538-digital-trend
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
      <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+     <link rel="stylesheet" href="css/landing-home.css">
 
 </head>
 <body>
@@ -38,10 +38,13 @@ https://templatemo.com/tm-538-digital-trend
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#service" class="nav-link contact" style="margin-top: 5px;">Service & Support</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img src="{{ asset('uploads/profile_path/' . auth()->user()->profile_path) }}" width="40" height="40" class="rounded-circle">
-                                <span style="margin-left: 10px;">{{ Auth::user()->name }}</span>
+                            <img src="{{ asset('uploads/profile_path/' . auth()->user()->profile_path) }}" width="40" height="40" class="rounded-circle">
+                            <span style="margin-left: 10px;">{{ Auth::user()->name }}</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-left: 15px;">
                             <a class="dropdown-item" href="#">Dashboard</a>
@@ -67,10 +70,10 @@ https://templatemo.com/tm-538-digital-trend
                               <div class="hero-text">
 
                                    <h1 class="text-white" data-aos="fade-up">MEET YOUR FRIEND, FIND YOUR TRIBE</h1>
-                                   <h2 class="text-white" data-aos="fade-up">Discover the magic of music in our vibrant community. Join us to share your passion, create harmonious
+                                   <h3 class="text-white" data-aos="fade-up">Discover the magic of music in our vibrant community. Join us to share your passion, create harmonious
                                     melodies, and make lasting musical connections!</h2>
 
-                                   <a href="{{ url('/login') }}" class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Find Your Communities</a>
+                                   <a href='/find-your-communities' class="custom-btn btn-bg btn mt-3" data-aos="fade-up" data-aos-delay="100">Find Your Communities</a>
                               </div>
                         </div>
 
@@ -84,6 +87,60 @@ https://templatemo.com/tm-538-digital-trend
                     </div>
                </div>
      </section>
+
+     <footer class="site-footer" id="service">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 mx-lg-auto col-md-8 col-10">
+              <h1 class="text-white" data-aos="fade-up" data-aos-delay="100">
+                We cultivate imaginative <strong>identities</strong> exclusively.
+            </h1>
+              </h1>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 col-12"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h4 class="my-4">Contact Info</h4>
+
+              <p class="mb-1">
+                <i class="fa fa-phone mr-2 footer-icon"></i>
+                +62 812 6059 1970
+              </p>
+
+              <p>
+                <a href="#">
+                  <i class="fa fa-envelope mr-2 footer-icon"></i>
+                  dwab@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <div
+              class="col-lg-3 col-md-6 col-12"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <h4 class="my-4">Our Studio</h4>
+
+              <p class="mb-1">
+                <i class="fa fa-home mr-2 footer-icon"></i>
+                Jl. Sitoluama, Kec. Balige, Kab. Toba, Institut Teknologi Del, Sumatera Utara - Indonesia
+              </p>
+            </div>
+
+            <div
+              class="col-lg-4 mx-lg-auto text-center col-md-8 col-12"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+            </div>
+          </div>
+        </div>
+      </footer>
+
 
 
 

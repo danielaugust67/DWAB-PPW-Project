@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PostFormRequest extends FormRequest
+class CommunityFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,6 +27,7 @@ class PostFormRequest extends FormRequest
             'image'=> ['nullable','mimes:jpg,png,jpeg'],
             'description'=> ['required','string'],
             'status'=>['required','string'],
+            'whatsapp'=>['nullable','string','max:225']
 
         ];
     }

@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Post extends Model
+class Community extends Model
 {
     use HasFactory;
 
-    protected $table =('posts');
+    protected $table =('community');
 
     protected $fillable = [
         'category_id',
@@ -17,5 +17,7 @@ class Post extends Model
         'slug',
         'image',
         'description',
+        'whatsapp',
+
     ];
 }

@@ -31,12 +31,12 @@ https://templatemo.com/tm-538-digital-trend
 }
 
 :root {
-    --primary-color: gray;
+    --primary-color: black;
     --secondary-color: #f1c111;
     --white-color: #ffffff;
     --dark-color: #171819;
     --project-bg: #f0f8ff;
-    --menu-bg: gray;
+    --menu-bg: black;
 
     --title-color: #15141a;
     --gray-color: #909090;
@@ -49,11 +49,11 @@ https://templatemo.com/tm-538-digital-trend
     --font-weight-bold: bold;
 
     --h1-font-size: 42px;
-    --h2-font-size: 20px;
-    --h3-font-size: 24px;
+    --h2-font-size: 51px;
+    --h3-font-size: 20px;
     --p-font-size: 18px;
     --base-font-size: 16px;
-    --menu-font-size: 14px;
+    --menu-font-size: 17px;
 
     --border-radius-large: 100px;
     --border-radius-small: 5px;
@@ -68,7 +68,11 @@ body {
      TYPOGRAPHY
   -----------------------------------------*/
 
-h3,
+h3 {
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 h4,
 h5,
 h6 {
@@ -675,7 +679,7 @@ a:focus {
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 40px;
     }
 
     h3 {

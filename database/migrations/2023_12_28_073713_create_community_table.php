@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('posts', function (Blueprint $table) {
+        Schema::create('community', function (Blueprint $table) {
             $table->id();
             $table->integer('category_id');
             $table->string('slug');
             $table->string('title');
-            $table->string('Whatsapp');
             $table->longtext('Description');
             $table->string('image')->nullable();
             $table->integer('status');
+            $table->string('whatsapp');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('post');
+        Schema::dropIfExists('community');
     }
 };
